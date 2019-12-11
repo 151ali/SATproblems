@@ -14,14 +14,14 @@ return 4*(i-1)+j;
 }
 int main(){
 	cout << "c DMACS fichier pour resoudre -> coloriage de graphe" <<endl;
-	cout << "p cnf 36 180"<<endl;
+	cout << "p cnf 36 396"<<endl; //180 
 
 /**
  * ================================================================
  * chaque sommet doit avoir une et une seule couleur
  * ================================================================
 */
-for(int j=1;i<=4;j++){        // les quatres couleurs
+for(int j=1;j<=4;j++){        // les quatres couleurs
     for(int i=1;i<=9;i++){    // tout les sommets //---> c != j
         for(int k=1;k<=4;k++){// les autres couleurs sauf couleur j
             if(k == j) continue;
